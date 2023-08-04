@@ -6,7 +6,7 @@
 /*   By: salatiel <salatiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 16:30:37 by salatiel          #+#    #+#             */
-/*   Updated: 2023/08/02 18:13:45 by salatiel         ###   ########.fr       */
+/*   Updated: 2023/08/04 16:03:53 by salatiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	main(void)
 {
 	std::string input;
+	PhoneBook phoneBook;
 
 	std::cout << BLUE << "Welcome to your very own PhoneBook, where you can store up to 8 contacts!" << END << std::endl;
 	std::cout << BLUE << "The following commands are available:" << END << std::endl;
@@ -27,12 +28,12 @@ int	main(void)
 		std::getline(std::cin, input);
 		if (input == "ADD")
 		{
-			std::cout << "VERY GOOD ADD CHOICE" << std::endl;
+			phoneBook.addContact();
 			continue;
 		}
 		else if (input == "SEARCH")
 		{
-			std::cout << "VERY GOOD SEARCH CHOICE" << std::endl;
+			phoneBook.printContacts();
 			continue;
 		}
 		else if (input == "EXIT")

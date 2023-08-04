@@ -6,7 +6,7 @@
 /*   By: salatiel <salatiel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 16:30:34 by salatiel          #+#    #+#             */
-/*   Updated: 2023/08/02 17:17:00 by salatiel         ###   ########.fr       */
+/*   Updated: 2023/08/04 15:57:44 by salatiel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,8 @@
 
 class Contact
 {
-	private:
-		std::string firstName;
-		std::string lastName;
-		std::string nickname;
-		std::string phoneNumber;
-		std::string darkestSecret;
-
 	public:
+		std::string fields[5];
 		Contact ();
 		void	addContact(void);
 };

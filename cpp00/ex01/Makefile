@@ -6,15 +6,15 @@
 #    By: salatiel <salatiel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/02 15:20:11 by salatiel          #+#    #+#              #
-#    Updated: 2023/08/02 18:13:27 by salatiel         ###   ########.fr        #
+#    Updated: 2023/08/04 16:04:39 by salatiel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # COMPILATION VARS
 
-SRCS	=	main.cpp #\
-#			PhoneBook.cpp \
-#			Contact.cpp
+SRCS	=	main.cpp \
+			PhoneBook.cpp \
+			Contact.cpp
 
 OBJS	=	${SRCS:%.c=${DIR_OBJ}%.o}
 
